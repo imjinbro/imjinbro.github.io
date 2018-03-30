@@ -10,7 +10,7 @@ tags: [oop,java]
   
 ## 객체 간의 요청 - 응답으로 프로그램이 완성시키기
 ```
-/* CoordinateMain.java */
+// CoordinateMain.java
 
 List<Point> points = Input.getPoints("좌표를 입력해주세요.");
 Figure triangle = new Triangle(points);
@@ -32,7 +32,7 @@ for (int i = 0; i < points.length; i++) {
 * for 문이 중첩되어있는 코드를 짜놓으면 편하다, 그렇지만 이후 유지보수나 다른 개발자가 코드를 봤을 때 가독성이 떨어진다(depth 증가)  
 * 아래처럼 객체화하면 이중 배열로 복잡하게 생각하지않아도되고, 메소드로 정의할 수 있으므로 가독성을 높일 수 있음. 또한 역할 위임이 이뤄지기때문에 코드 관리도 편함  
 ```
-/* Coordinate.java */
+// Coordinate.java
 
 private List<Line> points = new ArrayList<>();  
 
@@ -47,7 +47,7 @@ public boolean isMaxPosition(int position) {
 }
 
 
-/* Point.java */  
+// Point.java
 
 private int position;
 private boolean isDraw;  
@@ -58,33 +58,28 @@ public boolean isDrawPosition() {
 ```
   
 ## 상태값에 대한 get메소드로 상태값을 받아와서 가공하려하지말고 일하게 만들자
-```
+~~~
 List<Car> cars = getCars();
 List<Car> arrivedCar = new ArrayList<>();
-```
+~~~
 * 위의 코드로 짜면 다른 곳(객체)에서 상태값을 그대로 받아와서 다른 곳에서 판단하는 꼴  
 * 아래 코드처럼 바꿀 수 있음 : 판단은 거기서, 만드는건 만드는 역할을 맡은 곳에서  
-```
-/* Controller.java */
-
+~~~
+// Controller.java
 List<Car> arrivedCars = cars.getArrivedCars(10);
 
 
-/* Cars */
-
+// Cars
 List<Car> cars = new ArrayList<>();
 
 public List<Car> getArrivedCars(int arrivePosition) {
 	
 }
 
-
-/* Car */
-
 public boolean isArrived(int arrivePosition) {
     
 }
-```
+~~~
   
 ## 가장 중요한건....
 * 자바는 객체지향 프로그래밍이다.
