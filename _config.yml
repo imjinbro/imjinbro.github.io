@@ -1,0 +1,71 @@
+title: '생각을 개발하자, 박진형'
+email: jinbro@likelion.org
+description: ''
+url: 'http://imjinbro.github.io'
+enforce_ssl: ''
+baseurl: ''
+image: '/assets/img/lezhin_social_image.png'
+recruit_image: '/assets/img/lezhin_recruit.png'
+timezone: Asia/Seoul
+date_format: "%Y-%m-%d"
+
+repository: imjinbro/imjinbro.github.io
+
+permalink: /:year/:month/:day/:title
+
+excerpt_separator: <!--more-->
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  highlighter: rouge
+
+plugins:
+  - jekyll-paginate
+
+paginate: 5
+paginate_path: "/pages/:num/"
+
+exclude:
+  - README.md
+keep_files:
+  - assets
+  - files
+asset_url: /assets
+
+collections:
+  authors:
+    output: true
+    permalink: /authors/:path/
+  tags:
+    output: true
+    permalink: /tags/:path/
+
+defaults:
+  - scope:
+      path: ''
+      type: authors
+    values:
+      layout: author
+  - scope:
+      path: ''
+      type: tags
+    values:
+      layout: tag
+  - scope:
+      path: 'events'
+    values:
+      layout: page
+      sitemap: true
+  - scope:
+      path: 'recruit'
+    values:
+      layout: recruit
+      sitemap: false
+
+google_analytics_ua: 
+google_site_verification: 
+github_username: imjinbro
+twitter_username: 
+facebook_username: jinbroyo
