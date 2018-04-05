@@ -3,6 +3,9 @@ title: '기초를 알자 - 네트워크 프로토콜'
 author: imjinbro
 date: 2018-04-04 18:25
 tags: [network, web]
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---  
 
 ## 통신

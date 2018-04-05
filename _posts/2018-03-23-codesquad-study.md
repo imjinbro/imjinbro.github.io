@@ -3,6 +3,9 @@ title: '객체지향 프로그래밍할 때 기억하기'
 author: imjinbro
 date: 2018-03-25 19:26
 tags: [oop,java]
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---
 
 ## 시작하기

@@ -3,6 +3,9 @@ title: '상속을 extends답게'
 author: imjinbro
 date: 2018-03-27 20:58
 tags: [oop,java]
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---
 
 ## 상속은 inheritance가 아니라 확장(extend)

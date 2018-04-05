@@ -3,6 +3,9 @@ title: '객체는 관계를 맺는다 - 상속과 구현'
 author: imjinbro
 date: 2018-04-03 19:03
 tags: [oop,java]
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---  
 
 ## 객체 간의 관계
