@@ -3,6 +3,7 @@ title: 'enum 알고 사용하자'
 author: imjinbro
 date: 2018-04-05 14:21
 tags: [java]
+comments: true
 sitemap :
   changefreq : daily
   priority : 1.0

@@ -3,6 +3,7 @@ title: '상속을 extends답게'
 author: imjinbro
 date: 2018-03-27 20:58
 tags: [oop,java]
+comments: true
 sitemap :
   changefreq : daily
   priority : 1.0
